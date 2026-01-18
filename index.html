@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ВСЁ ПОЧИНИМ</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graphite: '#1f2933',
+            accent: '#2563eb',
+            accent2: '#f97316'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-graphite font-semibold">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="text-2xl md:text-3xl font-extrabold tracking-wide">ВСЁ ПОЧИНИМ</div>
+    <nav class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="#services" class="hover:text-accent">Услуги</a>
+      <a href="#why" class="hover:text-accent">Почему мы</a>
+      <a href="#contacts" class="hover:text-accent">Контакты</a>
+    </nav>
+    
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Мы всё починим рядом с домом</h1>
+      <p class="text-gray-700 text-lg mb-8">Ремонт техники, обуви, одежды, изготовление ключей и фото на документы — всё в одном месте.</p>
+      <a href="#services" class="inline-block bg-accent2 text-white px-6 py-3 rounded-lg font-semibold">Посмотреть услуги</a>
+    </div>
+    <div class="h-64 md:h-80 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400">
+      Плейсхолдер изображения
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-12">Наши услуги</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card -->
+      <div class="border-2 border-accent rounded-2xl p-6 hover:shadow-xl transition bg-white">
+        <i data-lucide="smartphone" class="w-10 h-10 text-accent mb-4"></i>
+        <h3 class="font-semibold mb-2">Ремонт телефонов и электроники</h3>
+        <p class="text-sm text-gray-600">Смартфоны, планшеты, мелкая электроника</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+
+      <div class="border-2 border-accent rounded-2xl p-6 hover:shadow-xl transition bg-white">
+        <i data-lucide="watch" class="w-10 h-10 text-accent mb-4"></i>
+        <h3 class="font-semibold mb-2">Замена батареек в часах</h3>
+        <p class="text-sm text-gray-600">Быстро и аккуратно</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+
+      <div class="border-2 border-accent rounded-2xl p-6 hover:shadow-xl transition bg-white">
+        <i data-lucide="boot" class="w-10 h-10 text-accent mb-4"></i>
+        <h3 class="font-semibold mb-2">Ремонт обуви</h3>
+        <p class="text-sm text-gray-600">Профессиональный подход</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+
+      <div class="border-2 border-accent rounded-2xl p-6 hover:shadow-xl transition bg-white">
+        <i data-lucide="scissors" class="w-10 h-10 text-accent mb-4"></i>
+        <h3 class="font-semibold mb-2">Ателье</h3>
+        <p class="text-sm text-gray-600">Ремонт и подгонка одежды</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+
+      <div class="border-2 border-accent rounded-2xl p-6 hover:shadow-xl transition bg-white">
+        <i data-lucide="camera" class="w-10 h-10 text-accent mb-4"></i>
+        <h3 class="font-semibold mb-2">Фото и печать</h3>
+        <p class="text-sm text-gray-600">Фото на документы</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+
+      <div class="border-2 border-accent rounded-2xl p-6 hover:shadow-xl transition bg-white">
+        <i data-lucide="key" class="w-10 h-10 text-accent mb-4"></i>
+        <h3 class="font-semibold mb-2">Изготовление ключей</h3>
+        <p class="text-sm text-gray-600">Квартирные, офисные</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section id="why" class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-12">Почему выбирают нас</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold mb-2">Быстро</h3>
+        <p class="text-sm text-gray-600">Большинство услуг выполняем в день обращения</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold mb-2">Качественно</h3>
+        <p class="text-sm text-gray-600">Опытные мастера и проверенные материалы</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold mb-2">Рядом с домом</h3>
+        <p class="text-sm text-gray-600">Удобное расположение и график работы</p>
+        <div class="mt-4 text-sm">
+          <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+          <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacts -->
+<section id="contacts" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Контакты</h2>
+      <p class="text-gray-700 mb-4 text-lg">Приходите в мастерскую или свяжитесь с нами по телефону или почте</p>
+      <div class="space-y-2 text-lg">
+        <p>Георгий: <a href="tel:+79999295161" class="text-accent font-bold">+7 (999) 929-51-61</a></p>
+        <p>Михаил: <a href="tel:+79672300152" class="text-accent font-bold">+7 (967) 230-01-52</a></p>
+        <p>Email: <a href="mailto:photo_ostov@mail.ru" class="text-accent font-bold">photo_ostov@mail.ru</a></p>
+        <p class="text-gray-700">Адрес: Московская область, рабочий посёлок Октябрьский, ул. Текстильщиков, 7А</p>
+      </div>
+    </div>
+    <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400">
+      Карта (плейсхолдер)
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-graphite text-white py-6">
+  <div class="max-w-7xl mx-auto px-4 text-sm flex flex-col md:flex-row justify-between">
+    <span>© Дом быта, 2026</span>
+    <span>Сервисный центр</span>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
